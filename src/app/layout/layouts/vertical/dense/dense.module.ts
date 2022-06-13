@@ -17,12 +17,13 @@ import { ShortcutsModule } from 'app/layout/common/shortcuts/shortcuts.module';
 import { UserModule } from 'app/layout/common/user/user.module';
 import { SharedModule } from 'app/shared/shared.module';
 import { DenseLayoutComponent } from 'app/layout/layouts/vertical/dense/dense.component';
+import {FuseScrollbarModule} from "../../../../../@fuse/directives/scrollbar";
 
 @NgModule({
     declarations: [
         DenseLayoutComponent
     ],
-    imports     : [
+    imports: [
         HttpClientModule,
         RouterModule,
         MatButtonModule,
@@ -39,7 +40,8 @@ import { DenseLayoutComponent } from 'app/layout/layouts/vertical/dense/dense.co
         SearchModule,
         ShortcutsModule,
         UserModule,
-        SharedModule
+        SharedModule,
+        FuseScrollbarModule
     ],
     exports     : [
         DenseLayoutComponent
